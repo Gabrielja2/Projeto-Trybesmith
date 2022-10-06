@@ -10,11 +10,19 @@ export default class UserModel {
 
   public async create(newProduct: IProduct): Promise<IProduct> {
     const { name, amount } = newProduct;
-    const [result] = await this.connection.execute<ResultSetHeader>(
+    const [{ insertId }] = await this.connection.execute<ResultSetHeader>(
       'INSERT INTO Trybesmith.Products (name, amount) VALUES (?, ?)',
       [name, amount],
     );
-    console.log('result', result.insertId);
-    return { id: result.insertId, ...newProduct };
+    // console.log('result', result.insertId);
+    return { id: insertId, ...newProduct };
+  }
+
+  public async show(): Promise<IProduct[]> {
+    const [result] = await this.connection.execute(
+      'SELECT * FROM Trybesmith.Products',
+    );
+    console.log('result', result);   
+    return result as IProduct[];
   }
 }
