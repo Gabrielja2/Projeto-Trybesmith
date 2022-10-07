@@ -6,17 +6,17 @@ export default class ProductModel {
 
   constructor(connection: Pool) {
     this.connection = connection;
-  } 
+  }
 
   public async show(): Promise<IOrder[]> {
     const [result] = await this.connection.execute(
-      `SELECT o.id, o.userId
+      `SELECT o.id, o.userId, JSON_ARRAYAGG(p.id) AS productsIds
         FROM Trybesmith.Orders as o
         JOIN Trybesmith.Products as p
         ON o.id = p.orderId
-        GROUP BY o.id;;`,
+        GROUP BY o.id;`,
     );
- 
+
     return result as IOrder[];
   }
 }
