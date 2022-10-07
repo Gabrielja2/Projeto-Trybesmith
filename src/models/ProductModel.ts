@@ -14,7 +14,7 @@ export default class ProductModel {
       'INSERT INTO Trybesmith.Products (name, amount) VALUES (?, ?)',
       [name, amount],
     );
-    // console.log('result', result.insertId);
+
     return { id: insertId, ...newProduct };
   }
 
