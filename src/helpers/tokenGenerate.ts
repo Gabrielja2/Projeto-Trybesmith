@@ -4,11 +4,13 @@ import { IUser } from '../interfaces/user';
 
 dotenv.config();
 
-const generateToken = async (user: Omit<IUser, 'password'>) => {
-  const KEY_SECRET: string = process.env.JWT_SECRET || 'secret';
+const generateToken = async ({ id, username }: Omit<IUser, 'password'>) => {
+  const KEY_SECRET = 'secret';
 
   const payload = {
-    user,
+    id,
+    username,
+    
   };
 
   const jwtconfig = {

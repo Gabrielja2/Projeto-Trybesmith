@@ -1,6 +1,7 @@
 import express from 'express';
 import 'express-async-errors';
-import httpErrorMiddleware from './middlewares/http.error.middleware';
+import errorHandler from './middlewares/middlewareError';
+import loginMiddleware from './middlewares/middlewareLogin';
 import route from './routers';
 
 const app = express();
@@ -9,6 +10,7 @@ app.use(express.json());
 app.use('/products', route.productRouter);
 app.use('/users', route.userRouter);
 app.use('/orders', route.orderRouter);
+app.use('/login', loginMiddleware, route.loginRouter);
 
-app.use(httpErrorMiddleware);
+app.use(errorHandler);
 export default app;
