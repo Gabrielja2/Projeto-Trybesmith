@@ -11,6 +11,6 @@ export default class ProductController {
   public newUser = async (req: Request, res: Response) => {
     const token = await this.service.createNewUser(req.body);
 
-    res.status(201).json(token);
+    res.status(201).json({ token });
   };  
 }

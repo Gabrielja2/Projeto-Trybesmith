@@ -14,7 +14,7 @@ export default class UserModel {
       'INSERT INTO Trybesmith.Users (username, classe, level, password ) VALUES (?, ?, ?, ?)',
       [username, classe, level, password],
     );
-    // console.log('result', result.insertId);
+
     return { id: insertId, ...newUser };
   }  
 }
