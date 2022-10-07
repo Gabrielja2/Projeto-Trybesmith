@@ -1,9 +1,9 @@
 import { Router } from 'express';
-// import OrderController from '../controllers/OrderController';
+import OrderController from '../controllers/OrderController';
 
 const router = Router();
-// const orderController = new OrderController();
+const orderController = new OrderController();
 
-// router.get('/', orderController.orders);
+router.get('/', orderController.orders);
 
 export default router;
