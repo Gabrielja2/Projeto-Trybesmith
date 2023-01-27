@@ -40,13 +40,6 @@ Você irá criar alguns endpoints que irão ler e escrever em um banco de dados,
 </details>
 
 
-  <strong>🎲 Entidades do projeto</strong><br />
-  - USER
-  - ORDER
-  - PRODUCT
-
-
-
 <details>
 <summary><strong>Como ter acesso ao projeto e instalar as dependências</strong></summary><br />
 
@@ -60,3 +53,8 @@ Você irá criar alguns endpoints que irão ler e escrever em um banco de dados,
     *`docker-compose up -d`
     
 </details>
+
+<strong>🎲 Entidades do projeto</strong><br />
+  - USER
+  - ORDER
+  - PRODUCT
