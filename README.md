@@ -3,7 +3,7 @@
 
 <strong>👨‍💻 O que foi desenvolvido</strong><br />
     Aqui você vai encontrar os detalhes de como foi estruturado este projeto e instruções para rodar.
-    Neste projeto, desenvolvi uma loja de itens medievais, no formato de uma API, utilizando Typescript.
+    Neste projeto, foi desenvolvido uma loja de itens medievais, no formato de uma API, utilizando Typescript.
     Também foi desenvolvido todas as camadas da aplicação seguindo a arquitetura MSC, (Models, Service e Controllers).
     Por meio dessa aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão ou CRUD.
 
