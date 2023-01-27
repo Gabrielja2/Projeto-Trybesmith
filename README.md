@@ -39,13 +39,13 @@ Você irá criar alguns endpoints que irão ler e escrever em um banco de dados,
   <br>
 </details>
 
-<details>
-  <summary><strong>🎲 Diagrama Entidade Relacionamento do projeto</strong></summary><br />
 
-  O banco de dados do projeto segue a estrutura abaixo:
+  <strong>🎲 Entidades do projeto</strong><br />
+  - USER
+  - ORDER
+  - PRODUCT
 
-  <img src="images/diagram-der.png" width="200px" >
-</details>
+
 
 <details>
 <summary><strong>Como ter acesso ao projeto e instalar as dependências</strong></summary><br />
