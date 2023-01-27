@@ -18,23 +18,15 @@ Você irá criar alguns endpoints que irão ler e escrever em um banco de dados,
   
   ## 👉 Com Docker
 
-  **⚠ Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior**.
-  
-  > :information_source: Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
+> Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
+  - Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queira fazer uso da aplicação em containers
+  - Esses serviços irão inicializar um container chamado `trybesmith` e outro chamado `trybesmith_db`.
+  - A partir daqui você pode rodar o container `trybesmith` via CLI ou abri-lo no VS Code.
 
-  - Lembre-se de parar o `mongo` se estiver usando localmente na porta padrão (`27017`).
-  - Esses serviços irão inicializar um container chamado `car_shop` e outro chamado `car_shop_db`.
-  - A partir daqui você pode rodar o container `car_shop` via CLI ou abri-lo no VS Code.
-
-  > :information_source: Use o comando `docker exec -it car_shop bash`.
-
+  > Use o comando `docker exec -it trybesmith bash`.
   - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
 
-  > :information_source: Instale as dependências [**Caso existam**] com `npm install` 
-  
-  - **⚠ Atenção:** Caso opte por utilizar o Docker, **TODOS** os comandos disponíveis no `package.json` (npm start, npm test, npm run dev, ...) devem ser executados **DENTRO** do container, ou seja, no terminal que aparece após a execução do comando `docker exec` citado acima.
-  
-  <br />
+  > Instale as dependências [**Caso existam**] com `npm install`
 
 ---
   
