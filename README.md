@@ -40,6 +40,14 @@ Você irá criar alguns endpoints que irão ler e escrever em um banco de dados,
 </details>
 
 <details>
+  <summary><strong>🎲 Diagrama Entidade Relacionamento do projeto</strong></summary><br />
+
+  O banco de dados do projeto segue a estrutura abaixo:
+
+  <img src="images/diagram-der.png" width="200px" >
+</details>
+
+<details>
 <summary><strong>Como ter acesso ao projeto e instalar as dependências</strong></summary><br />
 
     1. Entre na pasta do repositório que você acabou de clonar ou fazer o download do arquivo zip:
